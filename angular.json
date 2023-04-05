@@ -51,7 +51,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -63,7 +69,7 @@
               "browserTarget": "angular-training:build:production"
             },
             "development": {
-              "browserTarget": "angular-training:build:development"
+"browserTarget": "angular-training:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "37f425b0-865e-47d0-af99-39f9dd8e91e9"
   }
 }
